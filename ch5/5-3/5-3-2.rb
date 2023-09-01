@@ -1,7 +1,7 @@
 n, m, q = gets.chomp.split(' ').map(&:to_i)
 
 # false の n * 0 の 配列を作る
-graph = Array.new(n, [])
+graph = Array.new(n) { [] }
 
 # 本の辺を受け取る
 m.times do |i|
